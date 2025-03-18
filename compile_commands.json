@@ -1,0 +1,107 @@
+[
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/FIX_message.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/FIX_message.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/forwarding_service.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/forwarding_service.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/main.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/main.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/server.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/server.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/socket.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/socket.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/socket_manager.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/socket_manager.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  },
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-Iinclude",
+      "-o",
+      "order_manager",
+      "src/string_utils.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager",
+    "file": "/home/matt/dev/order-manager/src/string_utils.cc",
+    "output": "/home/matt/dev/order-manager/order_manager"
+  }
+]

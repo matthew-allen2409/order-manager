@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Wall",
+      "-o",
+      "ingest",
+      "main.cc"
+    ],
+    "directory": "/home/matt/dev/order-manager/ingester",
+    "file": "/home/matt/dev/order-manager/ingester/main.cc",
+    "output": "/home/matt/dev/order-manager/ingester/ingest"
+  }
+]
