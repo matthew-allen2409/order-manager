@@ -1,3 +1,5 @@
+#include <algorithm>
+#include <string>
 #include <cctype>
 #include <cstring>
 #include "string_utils.h"
@@ -24,4 +26,8 @@ void stripWhitespace(char buffer[]) {
     }
 
     buffer[end - start + 1] = '\0';
+}
+
+bool isNumeric(const std::string& str) {
+    return !str.empty() && std::all_of(str.begin(), str.end(), isdigit);
 }

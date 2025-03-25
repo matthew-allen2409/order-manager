@@ -40,6 +40,7 @@ Server::Server() {
 }
 
 Server::~Server() {
+    running = false;
     close(this->server_socket);
     std::lock_guard lock(client_mutex);
     for (auto socket : clients) {
@@ -70,7 +71,6 @@ void Server::handle_client(int clientSocket) {
             close(clientSocket);
             return;
         }
-
         stripWhitespace(buffer);
 
         if (std::strcmp(buffer, "END") == 0) {
@@ -82,8 +82,7 @@ void Server::handle_client(int clientSocket) {
 
             forward_order(msg);
         } catch (std::string str) {
-            send(clientSocket, str.c_str(), str.size(), 0);
-            break;
+            std::cerr << str << std::endl;
         }
 
         memset(buffer, 0, sizeof(buffer));

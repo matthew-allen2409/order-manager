@@ -6,6 +6,9 @@
 #include <tuple>
 #include <vector>
 
+static const int MAX_PRICE = 1'000'000;
+static const int MAX_QUANTITY = 1'000'000;
+
 class FIXMessage {
 public:
     FIXMessage(std::string string);

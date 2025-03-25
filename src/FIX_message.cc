@@ -5,6 +5,7 @@
 #include <vector>
 #include <tuple>
 #include "FIX_message.h"
+#include "string_utils.h"
 
 const char DELIMETER = 0x01;
 
@@ -103,6 +104,21 @@ FIXMessage::FIXMessage(std::string string) {
 
         this->tag_map[key] = value;
         this->tags.push_back(std::tuple(key, value));
+    }
+
+    std::string orderType = tag_map["40"];
+    if (orderType != "1" && orderType != "2") {
+        throw "Invalid Order type";
+    }
+
+    std::string price = tag_map["44"];
+    if(!isNumeric(price) || stoi(price) < 1 || stoi(price) > MAX_PRICE) {
+        throw "Invalid price";
+    }
+
+    std::string quantity = tag_map["38"];
+    if(!isNumeric(quantity) || stoi(quantity) < 1 || stoi(quantity) > MAX_PRICE) {
+        throw "Invalid price";
     }
 }
 
